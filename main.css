@@ -1,4 +1,23 @@
-
+body {
+	height: 100%;
+	margin: 0;
+	text-align: center;
+	width: 100%;
+}
 h1 {
+	
+}
+.main {
+	padding: 9rem;
+	background-image: url('background.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	font-size: 2rem;
+	color: white;
 	font-family: 'Roboto', sans-serif;
+}
+.main a{
+	font-size: 6rem;
+	font-family: 'Cabin', sans-serif;
 }
