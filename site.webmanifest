@@ -1,18 +1,19 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Daniel Ye",
+    "short_name": "Daniel Ye",
     "icons": [
         {
-            "src": "/android-chrome-192x192.png?v=almY6vwp5L",
+            "src": "/android-chrome-192x192.png?v=BGAKjKY9Gz",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/android-chrome-384x384.png?v=almY6vwp5L",
+            "src": "/android-chrome-384x384.png?v=BGAKjKY9Gz",
             "sizes": "384x384",
             "type": "image/png"
         }
     ],
     "theme_color": "#ffffff",
-    "background_color": "#ffffff"
+    "background_color": "#ffffff",
+    "display": "standalone"
 }
