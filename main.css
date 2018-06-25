@@ -1,31 +1,113 @@
 body {
-	height: 100%;
-	margin: 0;
-	text-align: center;
 	width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 	font-family: 'Roboto', sans-serif;
 }
-h1 {
-	
-}
-.main {
-	padding: 5rem;
+
+.jumbotron {
+	text-align: center;
+	margin: 0;
 	background-image: url('background.jpg');
 	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	font-size: 2rem;
-	color: white;
-	font-family: 'Roboto', sans-serif;
+	color: #ffffff;
+	height: 480px;
 }
-.main a{
-	font-size: 6rem;
-	font-family: 'Cabin', sans-serif;
+.jumbotron .row h1 {
+	font-size: 150px;
+	font-weight: bold;
 }
-#media {
+.jumbotron .row h3 {
+	font-style: italic;
+}
+.bar {
 	text-align: center;
+	align-items: center;
+	margin: 0;
+	background-color: rgba(13,42,183,.45);
+}
+.bar:hover {
+	background-color: rgba(13,42,183,.6);
+}
+.bar .row img {
+	text-align: right;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	height: 55px;
+}
+.bar .row h3 {
+	padding-top: 10px;
+	align-items: center;
+	font-size: 30px;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+.bar .row h3:hover {
+	color: black;
+}
+.profile {
+	text-align: center;
+	background-image: url('mississauga.jpg');
+	background-size: cover;
+	margin: 0;
+}
+.profile .row img {
+	margin: 20px;
+	height: 400px;
+}
+.profile .row .text {
+	background-color: rgba(255,255,255,.65);
+}
+.profile .row .text h2 {
+	text-align: center;
+	font-weight: bold;
+	font-size: 40px;
+	margin-top: 40px;
+	padding-top: 30px;
+	padding bottom:10px;
+	text-align: center;
+}
+.profile .row .text h3 {
+	text-align: left;
+	margin-bottom: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 30px;
+}
+.foot {
+	text-align: center;
+	background-color: rgba(13,42,183,.45);
+	background-size: cover;
+	margin: 0;
+}
+.foot p {
+	text-align: left;
+	font-size:15px;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+footer {
+	position: relative;
 	width: 100%;
-	height: 4rem;
-	overflow: hidden;
-	white-space: nowrap;
+	margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+  	color: white;
+}
+
+footer ul {
+	text-align: right;
+	position: relative;
+	width: 100%;
+	margin: 0px;
+    padding: 0px;
+	display: flex;
+	justify-content: flex-end;
+	list-style: none;
+}
+footer ul img {
+	margin: 10px;
 }
