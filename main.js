@@ -3,7 +3,16 @@ $(document).ready(() => {
 	$('.jumbotron .row h3').fadeIn(600);
 	$('.profile .row img').fadeIn(700);
 	$('.profile .row .text').fadeIn(700);
-
+	$('.gallery .gallery-item').on('mouseenter', event => { //change to this element
+		$(event.currentTarget).animate({
+			opacity:1
+		},400);
+	})
+	$('.gallery .gallery-item').on('mouseleave', event => { //change to this element
+		$(event.currentTarget).animate({
+			opacity:0.8
+		},400);
+	})
 	//nav-button
 
 	function goToByScroll(id){
