@@ -265,7 +265,7 @@ body {
 }
 .sportsinfo {
 	margin: 2rem;
-	text-align: center;
+	text-align: left;
 	width:100%-2rem;
 	color: white;
 	border-style: solid;
@@ -274,12 +274,19 @@ body {
 	background-color: white;
 }
 .sportsinfo h1 {
+	text-align: center;
 	color: black;
 	font-size: 8rem;
 }
+.sportsinfo p {
+	padding-left: 2rem;
+	color: black;
+	font-size: 2rem;
+	margin: 0.5rem;
+}
 .extrainfo {
 	margin: 2rem;
-	text-align: center;
+	text-align: left;
 	width:100%-2rem;
 	color: white;
 	border-style: solid;
@@ -288,6 +295,7 @@ body {
 	background-color: white;
 }
 .extrainfo h1 {
+	text-align: center;
 	color: black;
 	font-size: 7rem;
 }
