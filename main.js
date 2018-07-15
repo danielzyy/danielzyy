@@ -1,20 +1,40 @@
 $(document).ready(() => {
 	$('.jumbotron .row h1').fadeIn(500);
 	$('.jumbotron .row h3').fadeIn(600);
-	$('.profile .row img').fadeIn(700);
-	$('.profile .row .text').fadeIn(700);
-	$('.gallery .gallery-item').on('mouseenter', event => { //change to this element
+	$('.gallery .gallery-item .thumbnail').on('mouseenter', event => {
 		$(event.currentTarget).animate({
 			opacity:1
-		},400);
-	})
-	$('.gallery .gallery-item').on('mouseleave', event => { //change to this element
+		},350);
+	});
+	$('.gallery .thumbnail').on('mouseleave', event => {
 		$(event.currentTarget).animate({
 			opacity:0.8
-		},400);
-	})
-	//nav-button
-
+		},350);
+	});
+	$('.gallery #academics').on('click', () => {
+		$('#academics').fadeOut(500);
+		$('.academicsinfo').slideDown(500); 
+	});
+	$('.gallery #sports').on('click', () => {
+		$('#sports').fadeOut(500);
+		$('.sportsinfo').slideDown(500); 
+	});
+	$('.gallery #extracurriculars').on('click', () => {
+		$('#extracurriculars').fadeOut(500);
+		$('.extrainfo').slideDown(500); 
+	});
+	$('.academicsinfo .closebutton').on('click', () => {
+		$('.academicsinfo').slideUp(500); 
+		$('#academics').fadeIn(500);	
+	});
+	$('.sportsinfo .closebutton').on('click', () => {
+		$('.sportsinfo').slideUp(500); 
+		$('#sports').fadeIn(500);	
+	});
+	$('.extrainfo .closebutton').on('click', () => {
+		$('.extrainfo').slideUp(500); 
+		$('#extracurriculars').fadeIn(500);	
+	});
 	function goToByScroll(id){
 	          // Remove "link" from the ID
 	        id = id.replace("link", "");

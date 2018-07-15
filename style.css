@@ -18,7 +18,7 @@ body {
 		background-image: url('home background.jpg');
 		background-size: cover;
 		color: #ffffff;
-		height: 90%;
+		height: 80%;
 		width: 100%;
 	}
 	.jumbotron .row h1 {
@@ -101,12 +101,6 @@ body {
    text-decoration: none;
 }
 
-.bar .row .current {
-	align-items: center;
-	font-size: 30px;
-	color: #4D4242;
-	font-family: 'Montserrat', sans-serif;
-}
 .sidenav {
     height: 100%;
     width: 0;
@@ -213,21 +207,91 @@ body {
 
 .gallery {
 	margin-top: 20px;
-	margin-left: 150px;
-	margin-right: 150px;
 	display:flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
-.gallery-item {
+.gallery .gallery-item {
   	margin: 20px;
-  	opacity: 0.8;
 }
 
-.gallery-item .thumbnail {
+.gallery .gallery-item .thumbnail {
+	opacity: 0.8;
   	border: 5px solid #fff;
 }
+.closebutton {
+	font-weight: bold;
+	color: black;
+	font-size: 2.5rem;
+	float: right;
+	margin-right: 1rem;
+}
+.closebutton:hover {
+	color: #008dd3;
+	text-decoration: none;
+	transition: 0.4s;
+}
+.academicsinfo {
+	margin: 2rem;
+	text-align: left;
+	width:100%-2rem;
+	color: white;
+	border-style: solid;
+    border-width: 1rem;
+    border-color:#008dd3;
+	background-color: white;
+}
+.academicsinfo h1 {
+	text-align: center;
+	color: black;
+	font-size: 8rem;
+}
+.academicsinfo p {
+	padding-left: 2rem;
+	color: black;
+	font-size: 2rem;
+	margin: 0.5rem;
+}
+.academicsinfo ul {
+	color: black;
+	padding-left: 5rem;
+	text-align: left;
+}
+.academicsinfo ul li {
+	color: black;
+	font-size: 2rem;
+	text-align: left;
+}
+.sportsinfo {
+	margin: 2rem;
+	text-align: center;
+	width:100%-2rem;
+	color: white;
+	border-style: solid;
+    border-width: 1rem;
+    border-color:#008dd3;
+	background-color: white;
+}
+.sportsinfo h1 {
+	color: black;
+	font-size: 8rem;
+}
+.extrainfo {
+	margin: 2rem;
+	text-align: center;
+	width:100%-2rem;
+	color: white;
+	border-style: solid;
+    border-width: 1rem;
+    border-color:#008dd3;
+	background-color: white;
+}
+.extrainfo h1 {
+	color: black;
+	font-size: 7rem;
+}
+
 .foot {
 	text-align: center;
 	background-color: #008dd3;
