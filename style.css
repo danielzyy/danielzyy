@@ -299,7 +299,12 @@ body {
 	color: black;
 	font-size: 7rem;
 }
-
+.extrainfo {
+	padding-left: 2rem;
+	color: black;
+	font-size: 2rem;
+	margin: 0.5rem;
+}
 .foot {
 	text-align: center;
 	background-color: #008dd3;
