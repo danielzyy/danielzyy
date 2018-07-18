@@ -69,8 +69,8 @@
 		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		  <a id="homelink" href="#" onclick="closeNav()">Home</a>
 		  <a id="aboutmelink" href="#" onclick="closeNav()">About Me</a>
+		  <a id="projectslink" href="#" onclick="closeNav()">Projects</a>
 		  <a id="achievementslink" href="#" onclick="closeNav()">Achievements</a>
-		  <a id="contactmelink" href="#" onclick="closeNav()">Contact Me</a>
 		  <a id="resumelink" href="#" onclick="closeNav()">Resume</a>
 		</div>
 		<span style="cursor:pointer" onclick="openNav()"><img src="nav-button.png" style="width:2.5rem; height:2.5rem; margin-left: 4rem; float: left; float:top; margin-top: 2rem; align-self:left"></span>
@@ -90,6 +90,27 @@
 	       		<h3>Hello, thanks for visiting my online portfolio! I'm Daniel, a high school student currently attending St. Joseph Secondary School in Mississauga, ON, Canada. I enjoy using technology to develop and improve project s that can help tackle real-world issues.</h3>
        		</div>
 		</section>
+		<section class="projects" id="projects">
+			<span style="cursor:pointer" onclick="openNav()"><img src="nav-button.png" style="width:2.5rem; height:2.5rem; margin-left: 4rem; float: left; float:top; margin-top: 1rem"></span>
+		    <script>
+		    	function openNav() {
+		    	    document.getElementById("mySidenav").style.width = "250px";
+		    	}
+
+		    	function closeNav() {
+		    	    document.getElementById("mySidenav").style.width = "0";
+		    	}
+		    </script>
+		    <h1>Projects</h1>
+		</section>
+		<section class="gallery">
+			<figure class="gallery-item">
+				<a href="https://devpost.com/software/facethepolice-tech"><img class="thumbnail" src="facethepolice.PNG" style="width:30rem; height:21rem"></a>
+			</figure>
+			<figure class="gallery-item">
+				<a href="https://devpost.com/software/safe-and-sound-zl06d5"><img class="thumbnail" src="safeandsound.PNG" style="width:30rem; height:21rem"></a>
+			</figure>
+		</section>
 		<section class="achievements" id="achievements">
 			<span style="cursor:pointer" onclick="openNav()"><img src="nav-button.png" style="width:2.5rem; height:2.5rem; margin-left: 4rem; float: left; float:top; margin-top: 1rem"></span>
 		    <script>
@@ -104,10 +125,13 @@
 		    <h1>Achievements</h1>
 		</section>
 		<section class="gallery">
+			<figure class="gallery-item" id="academics">
+				<img class="thumbnail" src="academics.PNG" style="width:30rem; height:21rem">
+			</figure>
 			<div class="academicsinfo hide">
 				<h1><u>Academics</u><a href="javascript:void(0)" class="closebutton">&times;</a></h1>
 				<p><b>April 2017</b> - Waterloo Pascal Math Contest: Certificate of Distinction(Top 25%)</p>
-				<img src="pascal.jpg" style="display: block; width:30rem; height:20rem; margin-left: auto; margin-right: auto; margin-bottom: 1rem">
+				<img src="pascal.jpg" style="display: block; width:30rem; height:21rem; margin-left: auto; margin-right: auto; margin-bottom: 1rem">
 				<p><b>June 2017</b> - Honour Roll, John Fraser Secondary School</p>
 				<p><b>April 2018</b> - Waterloo Cayley Math Contest: Medal and Certificate of Distinction(School's Top Scoring Student and Top 25%)</p>
 				<p><b>June 2018</b> - Honour Roll, St. Joseph Secondary School</p>
@@ -120,28 +144,24 @@
 					<li>Grade 11 Chemistry</li>
 				</ul>
 			</div>
-			<figure class="gallery-item" id="academics">
-				<img class="thumbnail" src="academics.PNG" style="width:30rem; height:20rem">
+			<figure class="gallery-item" id="sports">
+				<img class="thumbnail" src="sports.PNG" style="width:30rem; height:21rem">
 			</figure>
 			<div class="sportsinfo hide">
 				<h1><u>Sports</u><a href="javascript:void(0)" class="closebutton">&times;</a></h1>
 				<p><b>May 2017</b> - Region of Peel Secondary School Athletic Association(ROPSSAA) Junior Badminton Gold Medalist and Most Valuable Player</p>
-				<img src="badminton.jpg" style="display: block; width:30rem; height:20rem; margin-left: auto; margin-right: auto; margin-bottom: 1rem">
+				<img src="badminton.jpg" style="display: block; width:30rem; height:21rem; margin-left: auto; margin-right: auto; margin-bottom: 1rem">
 				<p><b>December 2017</b> - Region of Peel Secondary School Athletic Association(ROPSSAA) Junior Volleyball Gold Medalist</p>
-				<img src="volleyball.jpg" style="display: block; width:30rem; height:20rem; margin-left: auto; margin-right: auto; margin-bottom: 1rem">
+				<img src="volleyball.jpg" style="display: block; width:30rem; height:21rem; margin-left: auto; margin-right: auto; margin-bottom: 1rem">
 			</div>
-			<figure class="gallery-item" id="sports">
-				<img class="thumbnail" src="sports.PNG" style="width:30rem; height:20rem">
+			<figure class="gallery-item" id="extracurriculars">
+				<img class="thumbnail" src="extracurriculars.PNG" style="width:30rem; height:21rem">
 			</figure>
 			<div class="extrainfo hide">
 				<h1><u>Extracurriculars</u><a href="javascript:void(0)" class="closebutton">&times;</a></h1>
 				<p><b>February 2018</b> - <b>DECA:</b> Qualified for the International Career Development Conference (ICDC) in the Food Marketing Series (FMS) category after placing top 10 in Ontario.</p>
-				<img src="deca.jpg" style="display: block; width:30rem; height:20rem; margin-left: auto; margin-right: auto; margin-bottom: 1rem">
-
+				<img src="deca.jpg" style="display: block; width:30rem; height:21rem; margin-left: auto; margin-right: auto; margin-bottom: 1rem">
 			</div>
-			<figure class="gallery-item" id="extracurriculars">
-				<img class="thumbnail" src="extracurriculars.PNG" style="width:30rem; height:20rem">
-			</figure>
 		</section>
 		<section class="resume" id="resume">
 			<span style="cursor:pointer" onclick="openNav()"><img src="nav-button.png" style="width:2.5rem; height:2.5rem; margin-left: 4rem; float: left; margin-top: 1rem"></span>
