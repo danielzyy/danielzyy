@@ -49,7 +49,7 @@
 			       		<h3><a id="aboutmelink" href="#">ABOUT ME</a></h3>
 			       	</div>
 			       	<div class="col">
-			       		<h3><a id="achievementslink" href="#">ACHIEVEMENTS</a></h3>
+			       		<h3><a id="projectslink" href="#">PROJECTS</a></h3>
 			       </div>
 		        </div>
 		        <div class="col-1">
@@ -57,7 +57,7 @@
 		        </div>
 		        <div class="col">
 		        	<div class="col">
-			       		<h3><a id="contactmelink" href="#">CONTACT ME</a></h3>
+		        		<h3><a id="achievementslink" href="#">ACHIEVEMENTS</a></h3>
 					</div>
 					<div class="col">
 			       		<h3><a id="resumelink" href="#">RESUME</a></h3>
@@ -73,33 +73,25 @@
 		  <a id="contactmelink" href="#" onclick="closeNav()">Contact Me</a>
 		  <a id="resumelink" href="#" onclick="closeNav()">Resume</a>
 		</div>
-		<section class="profile" id="aboutme">
-			
-		    <div class="row">
-		    	<span style="cursor:pointer" onclick="openNav()"><img src="nav-button.png" style="width:2.5rem; height:2.5rem; margin-left: 4rem;"></span>
-		    	<script>
-			    	function openNav() {
-			    	    document.getElementById("mySidenav").style.width = "250px";
-			    	}
+		<span style="cursor:pointer" onclick="openNav()"><img src="nav-button.png" style="width:2.5rem; height:2.5rem; margin-left: 4rem; float: left; float:top; margin-top: 2rem; align-self:left"></span>
+    	<script>
+	    	function openNav() {
+	    	    document.getElementById("mySidenav").style.width = "250px";
+	    	}
 
-			    	function closeNav() {
-			    	    document.getElementById("mySidenav").style.width = "0";
-			    	}
-		    	</script>
-		        <div class="col">
-		       		<img src="profile.png"/>
-		      	</div>
-		     	<div class="col">
-		     		<div class="text">
-			     		<h2><u>ABOUT ME</u></h2>
-			       		<h3>Hello, thanks for visiting my online portfolio! I'm Daniel, a high school student currently attending St. Joseph Secondary School in Mississauga, ON, Canada. I enjoy using technology to develop and improve project s that can help tackle real-world issues.</h3>
-		       		</div>
-		      	</div>
-		      	<div class="col-1"> </div>
-		    </div>
+	    	function closeNav() {
+	    	    document.getElementById("mySidenav").style.width = "0";
+	    	}
+    	</script>
+		<section class="profile" id="aboutme">
+	       	<img src="profile.png" class="me">
+	     	<div class="text">
+	     		<h2>ABOUT ME</h2>
+	       		<h3>Hello, thanks for visiting my online portfolio! I'm Daniel, a high school student currently attending St. Joseph Secondary School in Mississauga, ON, Canada. I enjoy using technology to develop and improve project s that can help tackle real-world issues.</h3>
+       		</div>
 		</section>
 		<section class="achievements" id="achievements">
-			<span style="cursor:pointer" onclick="openNav()"><img src="nav-button.png" style="width:2.5rem; height:2.5rem; margin-left: 4rem; float: left; margin-top: 1rem"></span>
+			<span style="cursor:pointer" onclick="openNav()"><img src="nav-button.png" style="width:2.5rem; height:2.5rem; margin-left: 4rem; float: left; float:top; margin-top: 1rem"></span>
 		    <script>
 		    	function openNav() {
 		    	    document.getElementById("mySidenav").style.width = "250px";
@@ -109,11 +101,7 @@
 		    	    document.getElementById("mySidenav").style.width = "0";
 		    	}
 		    </script>
-			<div class="row">
-				<div class="col">
-		    		<h1>Achievements</h1>
-		    	</div>
-		    </div>
+		    <h1>Achievements</h1>
 		</section>
 		<section class="gallery">
 			<div class="academicsinfo hide">
@@ -155,7 +143,7 @@
 				<img class="thumbnail" src="extracurriculars.PNG" style="width:30rem; height:20rem">
 			</figure>
 		</section>
-		<section class="contactme" id="contactme">
+		<section class="resume" id="resume">
 			<span style="cursor:pointer" onclick="openNav()"><img src="nav-button.png" style="width:2.5rem; height:2.5rem; margin-left: 4rem; float: left; margin-top: 1rem"></span>
 		    <script>
 		    	function openNav() {
@@ -168,7 +156,7 @@
 		    </script>
 			<h1>Contact Me</h1>
 			<h2> You can contact me at: <a href="mailto:danielye4@gmail.com">danielye4@gmail.com</a><br>To see more of my projects, visit: <a href="https://github.com/danielzyy"><img src="github.png" style="width:4rem; height:4rem;"></a> OR <a href="https://devpost.com/danielzyy"><img src="devpost.png" style="width:4.1rem; height:3.9rem"></a></h2>
-			<button onclick="window.location.href='resume.pdf'" class="resumebutton" id="resume">RESUME</button><br>
+			<button onclick="window.location.href='resume.pdf'" class="resumebutton">RESUME</button><br>
 			
 		</section>
 
