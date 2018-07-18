@@ -4,8 +4,8 @@ $(document).ready(() => {
 	$('.gallery .gallery-item .thumbnail').on('mouseenter', event => {
 		$(event.currentTarget).animate({
 			opacity:1,
-			height:"23rem",
-			width: "32rem"
+			height:"22rem",
+			width: "31rem"
 		},290);
 	});
 	$('.gallery .thumbnail').on('mouseleave', event => {
