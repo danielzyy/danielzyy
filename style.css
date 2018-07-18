@@ -94,7 +94,7 @@ body {
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 3vh;
     color: white;
     display: block;
     transition: 0.4s;
@@ -108,7 +108,7 @@ body {
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 36px;
+    font-size: 4vh;
     margin-left: 50px;
 }
 @media screen and (max-height: 450px) {
