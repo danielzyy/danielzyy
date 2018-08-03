@@ -28,14 +28,14 @@ body {
 	font-style: italic;
 
 }
-@media (min-height:800px) {
+@media (min-height:860px) {
 	.jumbotron {
 		height: 89%;
 	}
 }
-@media (max-height:800px) {
+@media (max-height:860px) {
 	.jumbotron {
-		height: 87%;
+		height: 86%;
 	}
 }
 @media (max-width: 800px) {
@@ -201,8 +201,6 @@ body {
 }
 
 .academicsinfo {
-	padding-left: 15%;
-	padding-right: 15%;
 	margin: 2rem;
 	text-align: left;
 	width:100%-2rem;
@@ -218,24 +216,24 @@ body {
 	font-size: 8rem;
 }
 .academicsinfo p {
-	padding-left: 2rem;
+	padding-left: 20%;
+	padding-right: 20%;
 	color: black;
 	font-size: 2rem;
 	margin: 0.5rem;
 }
 .academicsinfo ul {
+	padding-left: 25%;
 	color: black;
-	padding-left: 5rem;
 	text-align: left;
 }
 .academicsinfo ul li {
+
 	color: black;
 	font-size: 2rem;
 	text-align: left;
 }
 .sportsinfo {
-	padding-left: 15%;
-	padding-right: 15%;
 	margin: 2rem;
 	text-align: left;
 	width:100%-2rem;
@@ -251,15 +249,14 @@ body {
 	font-size: 8rem;
 }
 .sportsinfo p {
-	padding-left: 2rem;
+	padding-left: 20%;
+	padding-right: 20%;
 	color: black;
 	font-size: 2rem;
 	margin: 0.5rem;
 }
 
 .extrainfo {
-	padding-left: 15%;
-	padding-right: 15%;
 	margin: 2rem;
 	text-align: left;
 	width:100%-2rem;
@@ -275,7 +272,8 @@ body {
 	font-size: 7rem;
 }
 .extrainfo p {
-	padding-left: 2rem;
+	padding-left: 20%;
+	padding-right: 20%;
 	color: black;
 	font-size: 2rem;
 	margin: 0.5rem;
@@ -283,6 +281,7 @@ body {
 
 .resume {
 	background-image: url("resume background.jpg");
+	background-size: cover;
 	width: 100%;
 	text-align: center;
 }
