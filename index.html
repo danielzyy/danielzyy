@@ -75,115 +75,90 @@
 		  <a id="achievementslink" href="#" onclick="closeNav()">Achievements</a>
 		  <a id="resumelink" href="#" onclick="closeNav()">Resume</a>
 		</div>
-		<span style="cursor:pointer" onclick="openNav()"><img src="nav-button.png" style="width:2.5rem; height:2.5rem; margin-left: 4rem; float: left; float:top; margin-top: 2rem; align-self:left"></span>
+		<span style="cursor:pointer" onclick="openNav()"><img src="nav-button.png" id="navButton" style="width:2.5rem; height:2.5rem; margin-left: 4rem;position: fixed; z-index: 1; top: 0; left: 0; margin-top: 2rem; display: inline;transition: 0.2s"></span>
     	<script>
 	    	function openNav() {
 	    	    document.getElementById("mySidenav").style.width = "255px";
+	    	    document.getElementById("navButton").style.opacity = "0";
 	    	}
 
 	    	function closeNav() {
 	    	    document.getElementById("mySidenav").style.width = "0";
+	    	    document.getElementById("navButton").style.opacity = "1";
 	    	}
     	</script>
 		<section class="profile" id="aboutme">
 	       	<img src="profile.png" class="me">
 	     	<div class="text">
 	     		<h2>ABOUT ME</h2>
-	       		<h3>Hello, thanks for visiting my online portfolio! I'm Daniel, a high school student currently attending St. Joseph Secondary School in Mississauga, ON, Canada. I enjoy using technology to develop and improve projects that can help tackle real-world issues.</h3>
+	       		<h3>Hey there! Thanks for visiting my online portfolio! I'm Daniel, a high school student currently attending St. Joseph Secondary School in Mississauga, ON, Canada. I enjoy using technology to develop and improve projects that can help tackle real-world issues.</h3>
        		</div>
 		</section>
 		<section class="projects" id="projects">
-			<span style="cursor:pointer" onclick="openNav()"><img src="nav-button.png" style="width:2.5rem; height:2.5rem; margin-left: 4rem; float: left; float:top; margin-top: 1rem"></span>
-		    <script>
-		    	function openNav() {
-		    	    document.getElementById("mySidenav").style.width = "255px";
-		    	}
-
-		    	function closeNav() {
-		    	    document.getElementById("mySidenav").style.width = "0";
-		    	}
-		    </script>
 		    <h1>Projects</h1>
-		</section>
-		<section class="gallery">
-			<figure class="gallery-item">
-				<a href="https://devpost.com/software/facethepolice-tech"><img class="thumbnail" src="facethepolice.PNG" style="width:30rem; height:21rem"></a>
-			</figure>
-			<figure class="gallery-item">
-				<a href="https://devpost.com/software/safe-and-sound-zl06d5"><img class="thumbnail" src="safeandsound.PNG" style="width:30rem; height:21rem"></a>
-			</figure>
-			<figure class="gallery-item">
-				<a href="https://devpost.com/software/xchange-agjw38"><img class="thumbnail" src="xchange.png" style="width:30rem; height:21rem"></a>
-			</figure>
+			<section class="project-gallery">
+				<figure class="gallery-item">
+					<a href="https://devpost.com/software/facethepolice-tech"><img class="thumbnail" src="facethepolice.PNG" style="width:30rem; height:21rem"></a>
+				</figure>
+				<figure class="gallery-item">
+					<a href="https://devpost.com/software/safe-and-sound-zl06d5"><img class="thumbnail" src="safeandsound.PNG" style="width:30rem; height:21rem"></a>
+				</figure>
+				<figure class="gallery-item">
+					<a href="https://devpost.com/software/xchange-agjw38"><img class="thumbnail" src="xchange.png" style="width:30rem; height:21rem"></a>
+				</figure>
+				<figure class="gallery-item">
+					<a href="https://play.google.com/store/apps/details?id=com.danielye.appdanielye"><img class="thumbnail" src="pipedodger.PNG" style="width:30rem; height:21rem"></a>
+				</figure>
+			</section>
 		</section>
 		<section class="achievements" id="achievements">
-			<span style="cursor:pointer" onclick="openNav()"><img src="nav-button.png" style="width:2.5rem; height:2.5rem; margin-left: 4rem; float: left; float:top; margin-top: 1rem"></span>
-		    <script>
-		    	function openNav() {
-		    	    document.getElementById("mySidenav").style.width = "255px";
-		    	}
-
-		    	function closeNav() {
-		    	    document.getElementById("mySidenav").style.width = "0";
-		    	}
-		    </script>
 		    <h1>Achievements</h1>
-		</section>
-		<section class="gallery">
-			<figure class="gallery-item" id="academics">
-				<img class="thumbnail" src="academics.PNG" style="width:30rem; height:21rem">
-			</figure>
-			<div class="academicsinfo hide">
-				<h1><u>Academics</u><a href="javascript:void(0)" class="closebutton">&times;</a></h1>
-				<p><b>April 2017</b> - Waterloo Pascal Math Contest: Certificate of Distinction(Top 25%)</p>
-				<img src="pascal.jpg" style="display: block; width:30rem; height:21rem; margin-left: auto; margin-right: auto; margin-bottom: 1rem">
-				<p><b>June 2017</b> - Honour Roll, John Fraser Secondary School</p>
-				<p><b>April 2018</b> - Waterloo Cayley Math Contest: Medal and Certificate of Distinction(School's Top Scoring Student and Top 25%)</p>
-				<p><b>June 2018</b> - Honour Roll, St. Joseph Secondary School</p>
-				<p><b>Undergraduate Awards(Highest Mark in Course):</b></p>
-				<ul>
-					<li>Grade 9 Exploring Technologies</li>
-					<li>Grade 10 Career Studies</li>
-					<li>Grade 10 Science</li>
-					<li>Grade 11 Computer Science</li>
-					<li>Grade 11 Chemistry</li>
-				</ul>
-			</div>
-			<figure class="gallery-item" id="sports">
-				<img class="thumbnail" src="sports.PNG" style="width:30rem; height:21rem">
-			</figure>
-			<div class="sportsinfo hide">
-				<h1><u>Sports</u><a href="javascript:void(0)" class="closebutton">&times;</a></h1>
-				<p><b>May 2017</b> - Region of Peel Secondary School Athletic Association(ROPSSAA) Junior Badminton Gold Medalist and Most Valuable Player</p>
-				<img src="badminton.jpg" style="display: block; width:30rem; height:21rem; margin-left: auto; margin-right: auto; margin-bottom: 1rem">
-				<p><b>December 2017</b> - Region of Peel Secondary School Athletic Association(ROPSSAA) Junior Volleyball Gold Medalist</p>
-				<img src="volleyball.jpg" style="display: block; width:30rem; height:21rem; margin-left: auto; margin-right: auto; margin-bottom: 1rem">
-			</div>
-			<figure class="gallery-item" id="extracurriculars">
-				<img class="thumbnail" src="extracurriculars.PNG" style="width:30rem; height:21rem">
-			</figure>
-			<div class="extrainfo hide">
-				<h1><u>Extracurriculars</u><a href="javascript:void(0)" class="closebutton">&times;</a></h1>
-				<p><b>February 2018</b> - <b>DECA:</b> Qualified for the International Career Development Conference (ICDC) in the Food Marketing Series (FMS) category after placing top 10 in Ontario.</p>
-				<img src="deca.jpg" style="display: block; width:30rem; height:21rem; margin-left: auto; margin-right: auto; margin-bottom: 1rem">
-				<p> <b>September 2018</b> - <b>Hack the North Participant:</b> created <a href="https://xchange.now.sh/">https://xchange.now.sh/</a>, a website that allows you to track your expenses in your native currency with accurate and reliable Xe Currency data, all around the world. </p>
-			</div>
+			<section class="achievements-gallery">
+				<figure class="gallery-item" id="academics">
+					<img class="thumbnail" src="academics.PNG" style="width:30rem; height:21rem">
+				</figure>
+				<div class="academicsinfo hide">
+					<h2><u>Academics</u><a href="javascript:void(0)" class="closebutton">&times;</a></h2>
+					<p><b>April 2017</b> - Waterloo Pascal Math Contest: Certificate of Distinction(Top 25%)</p>
+					<img src="pascal.jpg" style="display: block; width:30rem; height:21rem; margin-left: auto; margin-right: auto; margin-bottom: 1rem">
+					<p><b>June 2017</b> - Honour Roll, John Fraser Secondary School</p>
+					<p><b>April 2018</b> - Waterloo Cayley Math Contest: Medal and Certificate of Distinction(School's Top Scoring Student and Top 25%)</p>
+					<p><b>June 2018</b> - Honour Roll, St. Joseph Secondary School</p>
+					<p><b>October 2018</b> - Joe Hugel Award, Grade 10 student with the highest overall final average</p>
+				</div>
+				<figure class="gallery-item" id="sports">
+					<img class="thumbnail" src="sports.PNG" style="width:30rem; height:21rem">
+				</figure>
+				<div class="sportsinfo hide">
+					<h2><u>Sports</u><a href="javascript:void(0)" class="closebutton">&times;</a></h2>
+					<p><b>May 2017</b> - Region of Peel Secondary School Athletic Association(ROPSSAA) Junior Badminton Gold Medalist and Most Valuable Player</p>
+					<img src="badminton.jpg" style="display: block; width:30rem; height:21rem; margin-left: auto; margin-right: auto; margin-bottom: 1rem">
+					<p><b>December 2017</b> - Region of Peel Secondary School Athletic Association(ROPSSAA) Junior Volleyball Gold Medalist</p>
+					<img src="jrvolleyball.jpg" style="display: block; width:30rem; height:21rem; margin-left: auto; margin-right: auto; margin-bottom: 1rem">
+					<p><b>December 2018</b> - Region of Peel Secondary School Athletic Association(ROPSSAA) Senior Volleyball Silver Medalist</p>
+					<img src="srvolleyball.jpg" style="display: block; width:30rem; height:21rem; margin-left: auto; margin-right: auto; margin-bottom: 1rem">
+				</div>
+				<figure class="gallery-item" id="extracurriculars">
+					<img class="thumbnail" src="extracurriculars.PNG" style="width:30rem; height:21rem">
+				</figure>
+				<div class="extrainfo hide">
+					<h2><u>Extracurriculars</u><a href="javascript:void(0)" class="closebutton">&times;</a></h2>
+					<p><b>February 2018</b> - <b>DECA:</b> Qualified for the International Career Development Conference (ICDC) in the Food Marketing Series (FMS) category after placing top 10 in Ontario.</p>
+					<img src="deca.jpg" style="display: block; width:30rem; height:21rem; margin-left: auto; margin-right: auto; margin-bottom: 1rem">
+					<p> <b>February 2018</b> - <b>Hack the Hammer, Mcmaster Innovation Park, Hamilton, Ontario:</b> Developed a facial recognition program that allows first responders to identify persons of interest from a live webcam feed, details can be found at <a href="https://devpost.com/software/facethepolice-tech">https://devpost.com/software/facethepolice-tech</a></p>
+					<p> <b>September 2018</b> - <b>Hack the North Participant:</b> created <a href="https://xchange.now.sh/">https://xchange.now.sh/</a>, a website that allows you to track your expenses in your native currency with accurate and reliable Xe Currency data, all around the world. </p>
+					<p><b>February 2019</b> - <b>DECA:</b> Placed top 20 in Ontario for the Sports and Entertainment Marketing (SEM) category</p>
+					<p>Awards: Second Place Overall and Best Domain Name from Domain.com</p>
+					<p> <b>July 2019</b> - <b>Shad Valley Program</b> </p>
+				</div>
+			</section>
 		</section>
 		<section class="resume" id="resume">
-			<span style="cursor:pointer" onclick="openNav()"><img src="nav-button.png" style="width:2.5rem; height:2.5rem; margin-left: 4rem; float: left; margin-top: 1rem"></span>
-		    <script>
-		    	function openNav() {
-		    	    document.getElementById("mySidenav").style.width = "255px";
-		    	}
-
-		    	function closeNav() {
-		    	    document.getElementById("mySidenav").style.width = "0";
-		    	}
-		    </script>
 			<h1>Contact Me</h1>
-			<h2> You can contact me at: <a href="mailto:danielye4@gmail.com">danielye4@gmail.com</a><br>To see more of my projects, visit:<br><a href="https://github.com/danielzyy"><img src="github.png" style="width:4rem; height:4rem;"></a>&nbsp;&nbsp;<a href="https://devpost.com/danielzyy"><img src="devpost.png" style="width:4.1rem; height:3.9rem"></a></h2>
-			<button onclick="window.location.href='resume.pdf'" class="resumebutton">RESUME</button><br>
-			
+			<section class="resume-text">
+				<h2> You can contact me at: <a href="mailto:danielye4@gmail.com">danielye4@gmail.com</a><br>To see more of my projects, visit:<br><a href="https://github.com/danielzyy"><img src="github.png" style="width:4rem; height:4rem;"></a>&nbsp;&nbsp;<a href="https://devpost.com/danielzyy"><img src="devpost.png" style="width:4.1rem; height:3.9rem"></a></h2>
+				<button onclick="window.location.href='resume.pdf'" class="resumebutton">RESUME</button><br>
+			</section>
 		</section>
 
 		<footer class="foot">

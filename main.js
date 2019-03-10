@@ -56,29 +56,29 @@ $(document).ready(() => {
         document.body.appendChild(css);
     };
 
-	$('.gallery .gallery-item .thumbnail').on('mouseenter', event => {
+	$('.gallery-item .thumbnail').on('mouseenter', event => {
 		$(event.currentTarget).animate({
 			opacity:1,
 			height:"22rem",
 			width: "31rem"
 		},290);
 	});
-	$('.gallery .thumbnail').on('mouseleave', event => {
+	$('.thumbnail').on('mouseleave', event => {
 		$(event.currentTarget).animate({
 			opacity:0.9,
 			height:"21rem",
 			width: "30rem"
 		},290);
 	});
-	$('.gallery #academics').on('click', () => {
+	$('#academics').on('click', () => {
 		$('#academics').fadeOut(500);
 		$('.academicsinfo').delay(500).slideDown(500); 
 	});
-	$('.gallery #sports').on('click', () => {
+	$('#sports').on('click', () => {
 		$('#sports').fadeOut(500);
 		$('.sportsinfo').delay(500).slideDown(500); 
 	});
-	$('.gallery #extracurriculars').on('click', () => {
+	$('#extracurriculars').on('click', () => {
 		$('#extracurriculars').fadeOut(500);
 		$('.extrainfo').delay(500).slideDown(500); 
 	});

@@ -1,10 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 body {
 	width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 	font-family: 'Roboto', "Lato";
+/*	background-color: #1faaef;*/
 }
 .hide {
 	display: none;
@@ -13,6 +18,9 @@ body {
 	text-align: center;
 	margin: 0;
 	background-image: url('home background.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
 	background-size: cover;
 	color: #ffffff;
 	width: 100%;
@@ -117,10 +125,16 @@ body {
 }
 
 .profile {
-	margin-top: 20px;
+	padding-top: 20px;
 	display:flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	background-image: url("profile background.jpg");
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .profile .me {
 	margin: 10px;
@@ -152,39 +166,53 @@ body {
 	margin: 0;
 	background-color: #1faaef;
 	background-size: cover;
-	color: #ffffff;
 }
 .projects h1 {
+	color: #ffffff;
 	font-size: 10vw;
 	font-weight: bold;
 }
 
 .achievements {
 	text-align: center;
-	margin: 0;
 	background-color: #1faaef;
-	background-size: cover;
-	color: #ffffff;
 }
 .achievements h1 {
+	color: #ffffff;
 	font-size: 10vw;
 	font-weight: bold;
 }
 
-.gallery {
-	margin-top: 20px;
+.project-gallery {
+	padding-top: 20px;
 	display:flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	background-image: url("projects background.jpg");
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-.gallery .gallery-item {
-  	margin: 20px;
+.achievements-gallery {
+	padding-top: 20px;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-image: url("achievements background.jpg");
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-.gallery .gallery-item .thumbnail {
+.gallery-item {
+  	margin: 25px;
+}
+
+.gallery-item .thumbnail {
 	opacity: 0.9;
-  	border: 5px solid #fff;
 }
 
 .closebutton {
@@ -210,7 +238,7 @@ body {
     border-color:#008dd3;
 	background-color: white;
 }
-.academicsinfo h1 {
+.academicsinfo h2 {
 	text-align: center;
 	color: black;
 	font-size: 8rem;
@@ -243,7 +271,7 @@ body {
     border-color:#008dd3;
 	background-color: white;
 }
-.sportsinfo h1 {
+.sportsinfo h2 {
 	text-align: center;
 	color: black;
 	font-size: 8rem;
@@ -266,7 +294,7 @@ body {
     border-color:#008dd3;
 	background-color: white;
 }
-.extrainfo h1 {
+.extrainfo h2 {
 	text-align: center;
 	color: black;
 	font-size: 7rem;
@@ -280,15 +308,15 @@ body {
 }
 
 .resume {
-	background-image: url("resume background.jpg");
-	background-size: cover;
-	width: 100%;
 	text-align: center;
+	background-color: #1faaef;
 }
 .resume h1{
 	font-size: 10vw;
 	font-weight: bold;
-	color: white;
+	color: #ffffff;
+	background-color: #1faaef;
+
 }
 .resume a{
 	text-decoration: underline;
@@ -299,12 +327,16 @@ body {
 	text-decoration: none;
 	color: #06509b;
 }
+.resume .resume-text {
+	background-image: url("resume background.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 .resume h2{
 	color: black;
-	font-size: 4vw;
-	margin-left:15%;
-	margin-right: 15%;
-	padding-bottom: 2.5%;
+	font-size: 3vw;
+	padding:5%;
 }
 
 .resumebutton {
@@ -315,7 +347,7 @@ body {
     border-color:#06509b;
     color: white;
     padding: 15px 25px;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     text-align: center;
     font-size: 3rem;
     cursor: pointer;
