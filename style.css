@@ -40,42 +40,32 @@ body {
   .jumbotron {
     background-attachment: scroll;
     background-size: cover;
-	height: 100%;
-	width: 100%;
 }
   .profile {
     background-attachment: scroll;
     background-size: cover;
-	height: 100%;
-	width: 100%;
 }
   .project-gallery {
     background-attachment: scroll;
     background-size: cover;
-	height: 100%;
-	width: 100%;
 }
   .achievements-gallery {
     background-attachment: scroll;
-    background-size: cover;
-	height: 100%;
-	width: 100%; 
+    background-size: cover; 
   }
   .resume-text {
     background-attachment: scroll;
     background-size: cover;
-	height: 100%;
-	width: 100%; 
   }
   /* change sidenav font size */
   .sidenav {
   	padding-top: 15px;
   }
   .sidenav a {
-  	font-size: 3rem;
+  	font-size: 20px;
   }
   .sidenav .closebtn {
-  	font-size: 4rem;
+  	font-size: 30px;
   }
 }
 @media (min-height:860px) {
