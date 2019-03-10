@@ -39,18 +39,23 @@ body {
 	/* Turn off parallax scrolling for all tablets and phones.*/
   .jumbotron {
     background-attachment: scroll;
+    background-position: 0%;
   }
   .profile {
     background-attachment: scroll;
+    background-position: 0%;
   }
   .project-gallery {
     background-attachment: scroll;
+    background-position: 0%;
   }
   .achievements-gallery {
     background-attachment: scroll;
+    background-position: 0%;
   }
   .resume-text {
     background-attachment: scroll;
+    background-position: 0%;
   }
   /* change sidenav font size */
   .sidenav {
