@@ -129,7 +129,7 @@ body {
 	display:flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	background-image: url("profile background.jpg");
+	background-image: url("profile background.JPG");
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
