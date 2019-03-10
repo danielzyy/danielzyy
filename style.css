@@ -34,7 +34,12 @@ body {
 	color: white;
 	font-size: 4vw;
 	font-style: italic;
-
+}
+/* Turn off parallax scrolling for all tablets and phones.*/
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
 }
 @media (min-height:860px) {
 	.jumbotron {
